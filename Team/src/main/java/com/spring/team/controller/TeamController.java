@@ -2,19 +2,15 @@ package com.spring.team.controller;
 
 
 import com.spring.team.TeamApplication;
-import com.spring.team.config.ApiCall;
+import com.spring.team.config.Proxy;
 import com.spring.team.model.Team;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/team")
@@ -23,7 +19,7 @@ public class TeamController {
     @Autowired
     RestTemplate restTemplate;
     @Autowired
-    private ApiCall apiCall;
+    private Proxy proxy;
     @Autowired
     private TeamApplication teamApplication;
 //    @GetMapping("/{from}/player/{to}")
@@ -53,7 +49,7 @@ public class TeamController {
 
     @GetMapping("/{from}/playerNew/{to}")
     public ResponseEntity<?> teamWithPayer(@PathVariable String from, @PathVariable String to) {
-        Team teamResponse = apiCall.getFootnallPlayer(from, to);
+        Team teamResponse = proxy.getFootnallPlayer(from, to);
         teamResponse.setNote("NONE");
         teamResponse.setNumberOfTeam("100");
         return ResponseEntity.ok(teamResponse);

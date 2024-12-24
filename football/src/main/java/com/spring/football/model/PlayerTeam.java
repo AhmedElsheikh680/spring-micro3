@@ -7,6 +7,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.sql.rowset.serial.SerialStruct;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -24,5 +26,7 @@ public class PlayerTeam {
     private String to;
     private int moneyPlayer;
     private int moneyTeam;
+    @Transient
+    private String port;
 
 }

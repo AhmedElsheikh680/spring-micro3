@@ -152,3 +152,40 @@ Writing [PlayersStatistics(numberOfTeams=5, numberOfPlayers=10, country=???????)
 Completed 200 OK
 Commencing graceful shutdown. Waiting for active requests to complete
 Graceful shutdown complete
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 20224 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+BeanFactory id=6b083677-bf75-3c1f-8a00-42cc878be63b
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1263 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+Unable to start LiveReload server
+Exposing 1 endpoint beneath base path '/actuator'
+Tomcat started on port 8080 (http) with context path '/'
+Started PlayersStatisticsApplication in 3.947 seconds (process running for 4.657)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Detected StandardServletMultipartResolver
+Detected AcceptHeaderLocaleResolver
+Detected FixedThemeResolver
+Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@65e23a0f
+Detected org.springframework.web.servlet.support.SessionFlashMapManager@1ba5fb30
+enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+Completed initialization in 2 ms
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=5, numberOfPlayers=10, country=???????)]
+Completed 200 OK
