@@ -20,6 +20,7 @@ public class Team {
     private int moneyTeam;
     private String note;
     private String numberOfTeam;
+    private String port;
 
 //    public Team(long id, String from, String to, int moneyTeam, String note, String numberOfTeam) {
 //        this.id = id;
