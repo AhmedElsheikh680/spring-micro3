@@ -537,3 +537,1673 @@ Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersSt
 Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
 Writing [PlayersStatistics(numberOfTeams=5, numberOfPlayers=10, country=Country Cairo)]
 Completed 200 OK
+GET "/actuator/refresh", parameters={}
+Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+Completed 405 METHOD_NOT_ALLOWED
+"ERROR" dispatch for GET "/error", parameters={}
+Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+Writing [{timestamp=Tue Jan 14 10:15:48 EET 2025, status=405, error=Method Not Allowed, trace=org.springframe (truncated)...]
+Exiting from "ERROR" dispatch, status 405
+POST "/actuator/refresh", parameters={}
+Read "application/octet-stream" to []
+Fetching config from server at : http://localhost:9090
+HTTP GET http://localhost:9090/players-statistics/default
+Accept=[application/json, application/*+json]
+Response 200 OK
+Reading to [org.springframework.cloud.config.environment.Environment]
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+HTTP GET http://localhost:9090/players-statistics/dev
+Accept=[application/json, application/*+json]
+Response 200 OK
+Reading to [org.springframework.cloud.config.environment.Environment]
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+Refreshed keys : [players-statistics.country]
+Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+Writing [[players-statistics.country]]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=5, numberOfPlayers=10, country=Ø§Ù?Ù?Ø§Ù?Ø±Ø©)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=5, numberOfPlayers=10, country=Country Cairo)]
+Completed 200 OK
+GET "/favicon.ico", parameters={}
+Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+Resource not found
+Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+Completed 404 NOT_FOUND
+"ERROR" dispatch for GET "/error", parameters={}
+Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+Writing [{timestamp=Tue Jan 14 10:16:37 EET 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
+Exiting from "ERROR" dispatch, status 404
+POST "/actuator/refresh", parameters={}
+Read "application/octet-stream" to []
+Fetching config from server at : http://localhost:9090
+HTTP GET http://localhost:9090/players-statistics/default
+Accept=[application/json, application/*+json]
+Response 200 OK
+Reading to [org.springframework.cloud.config.environment.Environment]
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+HTTP GET http://localhost:9090/players-statistics/dev
+Accept=[application/json, application/*+json]
+Response 200 OK
+Reading to [org.springframework.cloud.config.environment.Environment]
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+Refreshed keys : [players-statistics.country]
+Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+Writing [[players-statistics.country]]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=5, numberOfPlayers=10, country=Ø§Ù?Ù?Ø§Ù?Ø±Ø©)]
+Completed 200 OK
+Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+Commencing graceful shutdown. Waiting for active requests to complete
+Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+Commencing graceful shutdown. Waiting for active requests to complete
+Graceful shutdown complete
+Graceful shutdown complete
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 5900 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 7620 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+BeanFactory id=9df6ca70-8662-370e-932f-3492cc54ac7c
+BeanFactory id=9df6ca70-8662-370e-932f-3492cc54ac7c
+Tomcat initialized with port 8050 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2054 ms
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2168 ms
+Filter 'webMvcObservationFilter' configured for use
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+Unable to start LiveReload server
+LiveReload server is running on port 35729
+Exposing 17 endpoints beneath base path '/actuator'
+Tomcat started on port 8050 (http) with context path '/'
+Exposing 17 endpoints beneath base path '/actuator'
+Tomcat started on port 8080 (http) with context path '/'
+Started PlayersStatisticsApplication in 6.534 seconds (process running for 20434.606)
+Condition evaluation unchanged
+Started PlayersStatisticsApplication in 6.987 seconds (process running for 20470.26)
+Condition evaluation unchanged
+Restarting due to 7 class path changes (0 additions, 6 deletions, 1 modification)
+Commencing graceful shutdown. Waiting for active requests to complete
+Restarting due to 7 class path changes (0 additions, 6 deletions, 1 modification)
+Commencing graceful shutdown. Waiting for active requests to complete
+Graceful shutdown complete
+Graceful shutdown complete
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 5900 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 7620 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+BeanFactory id=4b7e8dae-121e-32c4-811d-73b9ddd1e058
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 753 ms
+BeanFactory id=4b7e8dae-121e-32c4-811d-73b9ddd1e058
+Filter 'webMvcObservationFilter' configured for use
+2 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+Tomcat initialized with port 8050 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2478 ms
+Filter 'webMvcObservationFilter' configured for use
+2 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+Unable to start LiveReload server
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+LiveReload server is running on port 35729
+Exposing 17 endpoints beneath base path '/actuator'
+Tomcat started on port 8050 (http) with context path '/'
+Exposing 17 endpoints beneath base path '/actuator'
+Tomcat started on port 8080 (http) with context path '/'
+Started PlayersStatisticsApplication in 6.013 seconds (process running for 20451.715)
+Condition evaluation unchanged
+Started PlayersStatisticsApplication in 6.675 seconds (process running for 20487.634)
+Condition evaluation unchanged
+Commencing graceful shutdown. Waiting for active requests to complete
+Graceful shutdown complete
+Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+Commencing graceful shutdown. Waiting for active requests to complete
+Graceful shutdown complete
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 5900 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@e5371e3 uris = array<String>['http://localhost:9090'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/dev": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@69d10143 uris = array<String>['http://localhost:9090'], optional = true, profiles = 'dev']): I/O error on GET request for "http://localhost:9090/players-statistics/dev": Connection refused: no further information
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@7d43abf7 uris = array<String>['http://localhost:9090'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information
+BeanFactory id=6c077003-b2ed-32a5-959e-c67712f648b5
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 854 ms
+Filter 'webMvcObservationFilter' configured for use
+2 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+LiveReload server is running on port 35729
+Exposing 17 endpoints beneath base path '/actuator'
+Tomcat started on port 8080 (http) with context path '/'
+Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+Commencing graceful shutdown. Waiting for active requests to complete
+Started PlayersStatisticsApplication in 5.139 seconds (process running for 20516.288)
+Condition evaluation unchanged
+Graceful shutdown complete
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 5900 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@3ee55f uris = array<String>['http://localhost:9090'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/dev": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@2c3d9f0e uris = array<String>['http://localhost:9090'], optional = true, profiles = 'dev']): I/O error on GET request for "http://localhost:9090/players-statistics/dev": Connection refused: no further information
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@490ea4c0 uris = array<String>['http://localhost:9090'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [D:\intellij\spring-micro\New folder\players-statistics\target\classes\com\spring\players\model\PlayersStatistics$PlayersStatisticsBuilder.class]
+Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [D:\intellij\spring-micro\New folder\players-statistics\target\classes\com\spring\players\model\PlayersStatistics$PlayersStatisticsBuilder.class]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:510) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:351) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:277) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:332) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:267) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:193) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:171) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:418) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609) ~[spring-context-6.2.1.jar:6.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.1.jar:3.4.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.1.jar:3.4.1]
+	at com.spring.players.PlayersStatisticsApplication.main(PlayersStatisticsApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.1.jar:3.4.1]
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 0
+	at org.springframework.asm.ClassReader.readShort(ClassReader.java:3642) ~[spring-core-6.2.1.jar:6.2.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:198) ~[spring-core-6.2.1.jar:6.2.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:180) ~[spring-core-6.2.1.jar:6.2.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:166) ~[spring-core-6.2.1.jar:6.2.1]
+	at org.springframework.asm.ClassReader.<init>(ClassReader.java:288) ~[spring-core-6.2.1.jar:6.2.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:56) ~[spring-core-6.2.1.jar:6.2.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:48) ~[spring-core-6.2.1.jar:6.2.1]
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-6.2.1.jar:6.2.1]
+	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:122) ~[spring-core-6.2.1.jar:6.2.1]
+	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:470) ~[spring-context-6.2.1.jar:6.2.1]
+	... 25 common frames omitted
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 5900 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@1dcf68c3 uris = array<String>['http://localhost:9090'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/dev": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@467c47e6 uris = array<String>['http://localhost:9090'], optional = true, profiles = 'dev']): I/O error on GET request for "http://localhost:9090/players-statistics/dev": Connection refused: no further information
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@316608 uris = array<String>['http://localhost:9090'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information
+BeanFactory id=9df6ca70-8662-370e-932f-3492cc54ac7c
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1453 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+LiveReload server is running on port 35729
+Exposing 17 endpoints beneath base path '/actuator'
+Tomcat started on port 8080 (http) with context path '/'
+Started PlayersStatisticsApplication in 4.703 seconds (process running for 20525.718)
+Condition evaluation unchanged
+Commencing graceful shutdown. Waiting for active requests to complete
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 34616 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@7759af45 uris = array<String>['http://localhost:9090'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/dev": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@2f6d66d9 uris = array<String>['http://localhost:9090'], optional = true, profiles = 'dev']): I/O error on GET request for "http://localhost:9090/players-statistics/dev": Connection refused: no further information
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@544bdd5e uris = array<String>['http://localhost:9090'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+Graceful shutdown complete
+No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+BeanFactory id=ae5d9a66-d086-36e0-94a3-0e124474015a
+Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [integrationMbeanExporter] is declared through a non-static factory method on that class; consider declaring it as static instead.
+Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$663/0x0000028daf4be488] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$664/0x0000028daf4be6a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties' of type [org.springframework.boot.autoconfigure.jmx.JmxProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Tomcat initialized with port 8050 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 5601 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+Channel 'players-statistics.springCloudBusInput' has 1 subscriber(s).
+LiveReload server is running on port 35729
+Exposing 24 endpoints beneath base path '/actuator'
+Registering MessageChannel errorChannel
+Registering MessageChannel springCloudBusInput
+Registering MessageChannel nullChannel
+Registering MessageHandler _org.springframework.integration.errorLogger
+Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+Channel 'players-statistics.errorChannel' has 1 subscriber(s).
+started bean '_org.springframework.integration.errorLogger'
+Tomcat started on port 8050 (http) with context path '/'
+Creating binder: rabbit
+Constructing binder child context for rabbit
+Caching the binder: rabbit
+declaring queue for inbound: springCloudBus.anonymous.9xoHa3vmTFu1EcVGw858RA, bound to: springCloudBus
+Attempting to connect to: [localhost:5672]
+Attempting to connect to: [localhost:5672]
+Attempting to connect to: [localhost:5672]
+Channel 'rabbit-163521283.springCloudBusInput.errors' has 1 subscriber(s).
+Channel 'rabbit-163521283.springCloudBusInput.errors' has 2 subscriber(s).
+Attempting to connect to: [localhost:5672]
+Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: no further information
+Attempting to connect to: [localhost:5672]
+started bean 'inbound.springCloudBus.anonymous.9xoHa3vmTFu1EcVGw858RA'
+Registering MessageChannel rabbit-163521283.springCloudBusInput.errors
+Started PlayersStatisticsApplication in 13.814 seconds (process running for 17.348)
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 3764 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@7b27dc07 uris = array<String>['http://localhost:9090'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/dev": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@73e054f3 uris = array<String>['http://localhost:9090'], optional = true, profiles = 'dev']): I/O error on GET request for "http://localhost:9090/players-statistics/dev": Connection refused: no further information
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@3460c781 uris = array<String>['http://localhost:9090'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+BeanFactory id=ae5d9a66-d086-36e0-94a3-0e124474015a
+Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [integrationMbeanExporter] is declared through a non-static factory method on that class; consider declaring it as static instead.
+Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$675/0x0000015f814be488] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$676/0x0000015f814be6a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties' of type [org.springframework.boot.autoconfigure.jmx.JmxProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 3206 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@684d3625: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Channel 'players-statistics.springCloudBusInput' has 1 subscriber(s).
+Unable to start LiveReload server
+Exposing 24 endpoints beneath base path '/actuator'
+Registering MessageChannel errorChannel
+Registering MessageChannel springCloudBusInput
+Registering MessageChannel nullChannel
+Registering MessageHandler _org.springframework.integration.errorLogger
+Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+Channel 'players-statistics.errorChannel' has 1 subscriber(s).
+started bean '_org.springframework.integration.errorLogger'
+Tomcat started on port 8080 (http) with context path '/'
+Creating binder: rabbit
+Constructing binder child context for rabbit
+Caching the binder: rabbit
+declaring queue for inbound: springCloudBus.anonymous.Cne_WthvR6eI9igR5eaZAA, bound to: springCloudBus
+Attempting to connect to: [localhost:5672]
+Attempting to connect to: [localhost:5672]
+Attempting to connect to: [localhost:5672]
+Channel 'rabbit-2119453121.springCloudBusInput.errors' has 1 subscriber(s).
+Channel 'rabbit-2119453121.springCloudBusInput.errors' has 2 subscriber(s).
+Attempting to connect to: [localhost:5672]
+Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: no further information
+Attempting to connect to: [localhost:5672]
+started bean 'inbound.springCloudBus.anonymous.Cne_WthvR6eI9igR5eaZAA'
+Registering MessageChannel rabbit-2119453121.springCloudBusInput.errors
+Started PlayersStatisticsApplication in 9.532 seconds (process running for 11.428)
+Attempting to connect to: [localhost:5672]
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Detected StandardServletMultipartResolver
+Detected AcceptHeaderLocaleResolver
+Detected FixedThemeResolver
+Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@35256a39
+Detected org.springframework.web.servlet.support.SessionFlashMapManager@667e2717
+enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+Completed initialization in 4 ms
+Rabbit health check failed
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:633)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2262)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2235)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2215)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:124)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:679)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:648)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:594)
+	... 50 common frames omitted
+Attempting to connect to: [localhost:5672]
+Rabbit health check failed
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:633)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2262)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2235)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2215)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:124)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:679)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:648)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:594)
+	... 52 common frames omitted
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@617c588d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@7b03ab24: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@141a3cdc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@1c3a1614: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@22c7d9cf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@15919c05: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@1a078dc: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@2e3efdbe: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@27014484: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Detected StandardServletMultipartResolver
+Detected AcceptHeaderLocaleResolver
+Detected FixedThemeResolver
+Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@37af1770
+Detected org.springframework.web.servlet.support.SessionFlashMapManager@30e5f627
+enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+Completed initialization in 7 ms
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@bc43def: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@2b644d5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@639d4614: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@51979c54: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@7b90b644: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@4d128769: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@4cff1004: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@4f9a9d18: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@8798572: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@7be9fdd2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@45c266e8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@695318b6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Waiting for workers to finish.
+Successfully waited for workers to finish.
+stopped bean 'inbound.springCloudBus.anonymous.Cne_WthvR6eI9igR5eaZAA'
+Channel 'players-statistics.rabbit-2119453121.springCloudBusInput.errors' has 1 subscriber(s).
+Channel 'players-statistics.rabbit-2119453121.springCloudBusInput.errors' has 0 subscriber(s).
+Commencing graceful shutdown. Waiting for active requests to complete
+Graceful shutdown complete
+Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+Channel 'players-statistics.errorChannel' has 0 subscriber(s).
+stopped bean '_org.springframework.integration.errorLogger'
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@5c19a65b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@29af1fc6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 29120 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+BeanFactory id=ae5d9a66-d086-36e0-94a3-0e124474015a
+Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [integrationMbeanExporter] is declared through a non-static factory method on that class; consider declaring it as static instead.
+Bean 'org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'bindersHealthContributor' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthContributor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'bindersHealthIndicatorListener' of type [org.springframework.cloud.stream.config.BindersHealthIndicatorAutoConfiguration$BindersHealthIndicatorListener] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$682/0x00000228d74bfde0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$683/0x00000228d74bd478] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'spring.jmx-org.springframework.boot.autoconfigure.jmx.JmxProperties' of type [org.springframework.boot.autoconfigure.jmx.JmxProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [integrationMbeanExporter]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@7507c4b6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 3438 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+Channel 'players-statistics.springCloudBusInput' has 1 subscriber(s).
+Unable to start LiveReload server
+Exposing 24 endpoints beneath base path '/actuator'
+Registering MessageChannel errorChannel
+Registering MessageChannel springCloudBusInput
+Registering MessageChannel nullChannel
+Registering MessageHandler _org.springframework.integration.errorLogger
+Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+Channel 'players-statistics.errorChannel' has 1 subscriber(s).
+started bean '_org.springframework.integration.errorLogger'
+Tomcat started on port 8080 (http) with context path '/'
+Creating binder: rabbit
+Constructing binder child context for rabbit
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@44c1dd08: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Caching the binder: rabbit
+declaring queue for inbound: springCloudBus.anonymous.CiJHHOKCQ6uMeB55DQQMhg, bound to: springCloudBus
+Attempting to connect to: [localhost:5672]
+Attempting to connect to: [localhost:5672]
+Attempting to connect to: [localhost:5672]
+Channel 'rabbit-1919597302.springCloudBusInput.errors' has 1 subscriber(s).
+Channel 'rabbit-1919597302.springCloudBusInput.errors' has 2 subscriber(s).
+Attempting to connect to: [localhost:5672]
+Broker not available; cannot force queue declarations during start: java.net.ConnectException: Connection refused: no further information
+Attempting to connect to: [localhost:5672]
+started bean 'inbound.springCloudBus.anonymous.CiJHHOKCQ6uMeB55DQQMhg'
+Registering MessageChannel rabbit-1919597302.springCloudBusInput.errors
+Started PlayersStatisticsApplication in 11.288 seconds (process running for 12.38)
+Attempting to connect to: [localhost:5672]
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Detected StandardServletMultipartResolver
+Detected AcceptHeaderLocaleResolver
+Detected FixedThemeResolver
+Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7a04c02f
+Detected org.springframework.web.servlet.support.SessionFlashMapManager@7d7d8093
+Rabbit health check failed
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:633)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2262)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2235)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2215)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:124)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:679)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:648)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:594)
+	... 50 common frames omitted
+enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+Completed initialization in 3 ms
+Attempting to connect to: [localhost:5672]
+Rabbit health check failed
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:633)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2262)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2235)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2215)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.getVersion(RabbitHealthIndicator.java:49)
+	at org.springframework.boot.actuate.amqp.RabbitHealthIndicator.doHealthCheck(RabbitHealthIndicator.java:44)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:124)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor40.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:679)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:648)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:594)
+	... 52 common frames omitted
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@4bd0a262: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@33f3ee3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@e0832c8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@5fa19da5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@2e5c9f00: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@680c2ce6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@3b349762: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@5c099d8e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=5, numberOfPlayers=10, country=Ø§Ù?Ù?Ø§Ù?Ø±Ø©)]
+Completed 200 OK
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@7dcae81b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@2fd941d7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@381fae18: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@e1cfdef: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@46817e8f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@3b0ccc13: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@267fd512: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@2e9ca82f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@2153c6c9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@3cf18cb0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@585e514e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@2cc479c9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@7558b57f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@4b0053c5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@777659dd: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@2fa62770: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@373d2559: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@2fcd243: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@528d7957: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@42b9095c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@5843ed4: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@1aa6e73: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@3f8566cb: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@2d6559c7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@38d03404: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@4f437563: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@8aa8074: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@1439ed12: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@1dd302ed: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@6394887d: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@e5df29f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@406870fe: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@6f681cd3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@60d73391: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@18864065: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@2900d7cf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+POST "/actuator/busrefresh", parameters={}
+Read "application/octet-stream" to []
+Attempting to connect to: [localhost:5672]
+Channel 'players-statistics.springCloudBusOutput' has 1 subscriber(s).
+Attempting to connect to: [localhost:5672]
+Failed to complete request: org.springframework.messaging.MessageHandlingException: error occurred in message handler [org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint@5aa26d6c], failedMessage=GenericMessage [payload=byte[215], headers={id=1e3179f1-5662-3583-e599-9005f470fc80, contentType=application/json, target-protocol=amqp, timestamp=1736863211082}]
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.messaging.MessageHandlingException: error occurred in message handler [org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint@5aa26d6c], failedMessage=GenericMessage [payload=byte[215], headers={id=1e3179f1-5662-3583-e599-9005f470fc80, contentType=application/json, target-protocol=amqp, timestamp=1736863211082}]] with root cause
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:679)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:648)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:594)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:254)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2262)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2235)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1135)
+	at org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint.doRabbitSend(AmqpOutboundEndpoint.java:251)
+	at org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint.send(AmqpOutboundEndpoint.java:232)
+	at org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint.handleRequestMessage(AmqpOutboundEndpoint.java:181)
+	at org.springframework.integration.handler.AbstractReplyProducingMessageHandler.handleMessageInternal(AbstractReplyProducingMessageHandler.java:146)
+	at org.springframework.integration.handler.AbstractMessageHandler.doHandleMessage(AbstractMessageHandler.java:105)
+	at org.springframework.integration.handler.AbstractMessageHandler.handleMessage(AbstractMessageHandler.java:73)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder$SendingHandler.handleMessageInternal(AbstractMessageChannelBinder.java:1206)
+	at org.springframework.integration.handler.AbstractMessageHandler.doHandleMessage(AbstractMessageHandler.java:105)
+	at org.springframework.integration.handler.AbstractMessageHandler.handleMessage(AbstractMessageHandler.java:73)
+	at org.springframework.integration.dispatcher.AbstractDispatcher.tryOptimizedDispatch(AbstractDispatcher.java:132)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.doDispatch(UnicastingDispatcher.java:148)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.dispatch(UnicastingDispatcher.java:121)
+	at org.springframework.integration.channel.AbstractSubscribableChannel.doSend(AbstractSubscribableChannel.java:72)
+	at org.springframework.integration.channel.AbstractMessageChannel.sendInternal(AbstractMessageChannel.java:390)
+	at org.springframework.integration.channel.AbstractMessageChannel.send(AbstractMessageChannel.java:334)
+	at org.springframework.integration.channel.AbstractMessageChannel.send(AbstractMessageChannel.java:304)
+	at org.springframework.cloud.stream.function.StreamBridge.send(StreamBridge.java:231)
+	at org.springframework.cloud.stream.function.StreamBridge.send(StreamBridge.java:171)
+	at org.springframework.cloud.stream.function.StreamBridge.send(StreamBridge.java:166)
+	at org.springframework.cloud.bus.StreamBusBridge.send(StreamBusBridge.java:36)
+	at org.springframework.cloud.bus.RemoteApplicationEventListener.onApplicationEvent(RemoteApplicationEventListener.java:46)
+	at org.springframework.cloud.bus.RemoteApplicationEventListener.onApplicationEvent(RemoteApplicationEventListener.java:26)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.cloud.bus.endpoint.AbstractBusEndpoint.publish(AbstractBusEndpoint.java:54)
+	at org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.busRefresh(RefreshBusEndpoint.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:327)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:434)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+"ERROR" dispatch for POST "/error", parameters={}
+Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+Writing [{timestamp=Tue Jan 14 16:00:11 EET 2025, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+Exiting from "ERROR" dispatch, status 500
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@4f1526ad: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@46f38eca: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@8794fc7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@750d2373: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@23dbabe5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@476f9e4c: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@6ea5d1a6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@3c01afa3: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@7feb181f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@689d3436: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@26e7f02f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@56ca022f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@473146d8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@29ff0eba: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@2c697db1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@344f812f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@26de6290: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@42ec0781: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@1e6b6717: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@67e23e46: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@38b5efd2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@7038085f: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@41a60eb6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@3acbf5f6: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@257213d2: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@14e2b44e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@7e6f51b8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@20fa94f9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@127d1010: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@decbf25: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@74113258: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@13fb9dc1: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@4ec716e7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@39510126: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@673626db: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@305acb07: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@14355715: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@5aa625d5: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@167f5bef: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@282db3d0: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@28999eb7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@733340c7: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+POST "/actuator/busrefresh", parameters={}
+Read "application/octet-stream" to []
+Attempting to connect to: [localhost:5672]
+Failed to complete request: org.springframework.messaging.MessageHandlingException: error occurred in message handler [org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint@5aa26d6c], failedMessage=GenericMessage [payload=byte[215], headers={id=1955e3d6-e0ae-358e-debe-93efe5523abc, contentType=application/json, target-protocol=amqp, timestamp=1736863318323}]
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.messaging.MessageHandlingException: error occurred in message handler [org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint@5aa26d6c], failedMessage=GenericMessage [payload=byte[215], headers={id=1955e3d6-e0ae-358e-debe-93efe5523abc, contentType=application/json, target-protocol=amqp, timestamp=1736863318323}]] with root cause
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:679)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:648)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:594)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:254)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2262)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2235)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1135)
+	at org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint.doRabbitSend(AmqpOutboundEndpoint.java:251)
+	at org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint.send(AmqpOutboundEndpoint.java:232)
+	at org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint.handleRequestMessage(AmqpOutboundEndpoint.java:181)
+	at org.springframework.integration.handler.AbstractReplyProducingMessageHandler.handleMessageInternal(AbstractReplyProducingMessageHandler.java:146)
+	at org.springframework.integration.handler.AbstractMessageHandler.doHandleMessage(AbstractMessageHandler.java:105)
+	at org.springframework.integration.handler.AbstractMessageHandler.handleMessage(AbstractMessageHandler.java:73)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder$SendingHandler.handleMessageInternal(AbstractMessageChannelBinder.java:1206)
+	at org.springframework.integration.handler.AbstractMessageHandler.doHandleMessage(AbstractMessageHandler.java:105)
+	at org.springframework.integration.handler.AbstractMessageHandler.handleMessage(AbstractMessageHandler.java:73)
+	at org.springframework.integration.dispatcher.AbstractDispatcher.tryOptimizedDispatch(AbstractDispatcher.java:132)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.doDispatch(UnicastingDispatcher.java:148)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.dispatch(UnicastingDispatcher.java:121)
+	at org.springframework.integration.channel.AbstractSubscribableChannel.doSend(AbstractSubscribableChannel.java:72)
+	at org.springframework.integration.channel.AbstractMessageChannel.sendInternal(AbstractMessageChannel.java:390)
+	at org.springframework.integration.channel.AbstractMessageChannel.send(AbstractMessageChannel.java:334)
+	at org.springframework.integration.channel.AbstractMessageChannel.send(AbstractMessageChannel.java:304)
+	at org.springframework.cloud.stream.function.StreamBridge.send(StreamBridge.java:231)
+	at org.springframework.cloud.stream.function.StreamBridge.send(StreamBridge.java:171)
+	at org.springframework.cloud.stream.function.StreamBridge.send(StreamBridge.java:166)
+	at org.springframework.cloud.bus.StreamBusBridge.send(StreamBusBridge.java:36)
+	at org.springframework.cloud.bus.RemoteApplicationEventListener.onApplicationEvent(RemoteApplicationEventListener.java:46)
+	at org.springframework.cloud.bus.RemoteApplicationEventListener.onApplicationEvent(RemoteApplicationEventListener.java:26)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.cloud.bus.endpoint.AbstractBusEndpoint.publish(AbstractBusEndpoint.java:54)
+	at org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.busRefresh(RefreshBusEndpoint.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:327)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:434)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+"ERROR" dispatch for POST "/error", parameters={}
+Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+Writing [{timestamp=Tue Jan 14 16:01:58 EET 2025, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+Exiting from "ERROR" dispatch, status 500
+POST "/actuator/busrefresh", parameters={}
+Read "application/octet-stream" to []
+Attempting to connect to: [localhost:5672]
+Failed to complete request: org.springframework.messaging.MessageHandlingException: error occurred in message handler [org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint@5aa26d6c], failedMessage=GenericMessage [payload=byte[215], headers={id=a5892034-1694-d605-abd2-9b67689599d1, contentType=application/json, target-protocol=amqp, timestamp=1736863322689}]
+Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.messaging.MessageHandlingException: error occurred in message handler [org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint@5aa26d6c], failedMessage=GenericMessage [payload=byte[215], headers={id=a5892034-1694-d605-abd2-9b67689599d1, contentType=application/json, target-protocol=amqp, timestamp=1736863322689}]] with root cause
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:61)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1249)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:679)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:648)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:594)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:254)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2262)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2235)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1135)
+	at org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint.doRabbitSend(AmqpOutboundEndpoint.java:251)
+	at org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint.send(AmqpOutboundEndpoint.java:232)
+	at org.springframework.integration.amqp.outbound.AmqpOutboundEndpoint.handleRequestMessage(AmqpOutboundEndpoint.java:181)
+	at org.springframework.integration.handler.AbstractReplyProducingMessageHandler.handleMessageInternal(AbstractReplyProducingMessageHandler.java:146)
+	at org.springframework.integration.handler.AbstractMessageHandler.doHandleMessage(AbstractMessageHandler.java:105)
+	at org.springframework.integration.handler.AbstractMessageHandler.handleMessage(AbstractMessageHandler.java:73)
+	at org.springframework.cloud.stream.binder.AbstractMessageChannelBinder$SendingHandler.handleMessageInternal(AbstractMessageChannelBinder.java:1206)
+	at org.springframework.integration.handler.AbstractMessageHandler.doHandleMessage(AbstractMessageHandler.java:105)
+	at org.springframework.integration.handler.AbstractMessageHandler.handleMessage(AbstractMessageHandler.java:73)
+	at org.springframework.integration.dispatcher.AbstractDispatcher.tryOptimizedDispatch(AbstractDispatcher.java:132)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.doDispatch(UnicastingDispatcher.java:148)
+	at org.springframework.integration.dispatcher.UnicastingDispatcher.dispatch(UnicastingDispatcher.java:121)
+	at org.springframework.integration.channel.AbstractSubscribableChannel.doSend(AbstractSubscribableChannel.java:72)
+	at org.springframework.integration.channel.AbstractMessageChannel.sendInternal(AbstractMessageChannel.java:390)
+	at org.springframework.integration.channel.AbstractMessageChannel.send(AbstractMessageChannel.java:334)
+	at org.springframework.integration.channel.AbstractMessageChannel.send(AbstractMessageChannel.java:304)
+	at org.springframework.cloud.stream.function.StreamBridge.send(StreamBridge.java:231)
+	at org.springframework.cloud.stream.function.StreamBridge.send(StreamBridge.java:171)
+	at org.springframework.cloud.stream.function.StreamBridge.send(StreamBridge.java:166)
+	at org.springframework.cloud.bus.StreamBusBridge.send(StreamBusBridge.java:36)
+	at org.springframework.cloud.bus.RemoteApplicationEventListener.onApplicationEvent(RemoteApplicationEventListener.java:46)
+	at org.springframework.cloud.bus.RemoteApplicationEventListener.onApplicationEvent(RemoteApplicationEventListener.java:26)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.cloud.bus.endpoint.AbstractBusEndpoint.publish(AbstractBusEndpoint.java:54)
+	at org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.busRefresh(RefreshBusEndpoint.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:327)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:434)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+"ERROR" dispatch for POST "/error", parameters={}
+Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+Writing [{timestamp=Tue Jan 14 16:02:02 EET 2025, status=500, error=Internal Server Error, trace=org.springfr (truncated)...]
+Exiting from "ERROR" dispatch, status 500
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@7a6b1f9e: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@71c0ae2a: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@3d7bbc3b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@432b6052: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@49aecabf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: no further information
+Restarting Consumer@47ec1d6b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+Attempting to connect to: [localhost:5672]
+Created new connection: rabbitConnectionFactory#402d600d:66/SimpleConnection@3d74fd20 [delegate=amqp://guest@127.0.0.1:5672/, localPort=5592]
+Auto-declaring a non-durable, auto-delete, or exclusive Queue (springCloudBus.anonymous.9xoHa3vmTFu1EcVGw858RA) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+Created new connection: rabbitConnectionFactory#1dbcda8c:53/SimpleConnection@12f56c7f [delegate=amqp://guest@127.0.0.1:5672/, localPort=5593]
+Auto-declaring a non-durable, auto-delete, or exclusive Queue (springCloudBus.anonymous.CiJHHOKCQ6uMeB55DQQMhg) durable:false, auto-delete:true, exclusive:true. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+Waiting for workers to finish.
+Successfully waited for workers to finish.
+stopped bean 'inbound.springCloudBus.anonymous.CiJHHOKCQ6uMeB55DQQMhg'
+Channel 'players-statistics.rabbit-1919597302.springCloudBusInput.errors' has 1 subscriber(s).
+Channel 'players-statistics.rabbit-1919597302.springCloudBusInput.errors' has 0 subscriber(s).
+Commencing graceful shutdown. Waiting for active requests to complete
+Graceful shutdown complete
+Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+Channel 'players-statistics.errorChannel' has 0 subscriber(s).
+stopped bean '_org.springframework.integration.errorLogger'
