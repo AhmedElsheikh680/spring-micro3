@@ -1,16 +1,103 @@
-GET "/", parameters={}
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 34556 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@3cc3718c uris = array<String>['http://localhost:9090'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/dev": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@2570d70f uris = array<String>['http://localhost:9090'], optional = true, profiles = 'dev']): I/O error on GET request for "http://localhost:9090/players-statistics/dev": Connection refused: no further information
+Fetching config from server at : http://localhost:9090
+Exception on Url - http://localhost:9090:org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information. Will be trying the next url if available
+Could not locate PropertySource ([ConfigServerConfigDataResource@294d6b2b uris = array<String>['http://localhost:9090'], optional = true, profiles = 'default']): I/O error on GET request for "http://localhost:9090/players-statistics/default": Connection refused: no further information
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+BeanFactory id=6b083677-bf75-3c1f-8a00-42cc878be63b
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2092 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+LiveReload server is running on port 35729
+Exposing 1 endpoint beneath base path '/actuator'
+Tomcat started on port 8080 (http) with context path '/'
+Started PlayersStatisticsApplication in 6.62 seconds (process running for 7.568)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Detected StandardServletMultipartResolver
+Detected AcceptHeaderLocaleResolver
+Detected FixedThemeResolver
+Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1f513a09
+Detected org.springframework.web.servlet.support.SessionFlashMapManager@656206af
+enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+Completed initialization in 2 ms
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=0, numberOfPlayers=0, country=null)]
+Completed 200 OK
+GET "/favicon.ico", parameters={}
 Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
 Resource not found
-Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
+Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
 Completed 404 NOT_FOUND
 "ERROR" dispatch for GET "/error", parameters={}
-Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-Selected 'text/html' given [text/html, text/html;q=0.8]
+Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+Writing [{timestamp=Tue Jan 14 09:43:25 EET 2025, status=404, error=Not Found, trace=org.springframework.web. (truncated)...]
 Exiting from "ERROR" dispatch, status 404
-Restarting due to 7 class path changes (0 additions, 7 deletions, 0 modifications)
 Commencing graceful shutdown. Waiting for active requests to complete
 Graceful shutdown complete
-Starting PlayersStatisticsApplication using Java 17.0.9 with PID 20224 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 26448 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+BeanFactory id=6b083677-bf75-3c1f-8a00-42cc878be63b
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1118 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+LiveReload server is running on port 35729
+Exposing 1 endpoint beneath base path '/actuator'
+Tomcat started on port 8080 (http) with context path '/'
+Started PlayersStatisticsApplication in 3.513 seconds (process running for 4.238)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Detected StandardServletMultipartResolver
+Detected AcceptHeaderLocaleResolver
+Detected FixedThemeResolver
+Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3c4d291a
+Detected org.springframework.web.servlet.support.SessionFlashMapManager@38fe4cae
+enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+Completed initialization in 3 ms
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=5, numberOfPlayers=10, country=???????)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=5, numberOfPlayers=10, country=???????)]
+Completed 200 OK
+Restarting due to 7 class path changes (0 additions, 6 deletions, 1 modification)
+Commencing graceful shutdown. Waiting for active requests to complete
+Graceful shutdown complete
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 26448 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
 The following 1 profile is active: "dev"
 Fetching config from server at : http://localhost:9090
 Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
@@ -21,21 +108,21 @@ Tomcat initialized with port 8080 (http)
 Starting service [Tomcat]
 Starting Servlet engine: [Apache Tomcat/10.1.34]
 Initializing Spring embedded WebApplicationContext
-Root WebApplicationContext: initialization completed in 6387 ms
+Root WebApplicationContext: initialization completed in 513 ms
 Filter 'webMvcObservationFilter' configured for use
 2 mappings in 'requestMappingHandlerMapping'
 Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
 ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
 ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-Unable to start LiveReload server
+LiveReload server is running on port 35729
 Exposing 1 endpoint beneath base path '/actuator'
 Tomcat started on port 8080 (http) with context path '/'
-Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
-Commencing graceful shutdown. Waiting for active requests to complete
-Started PlayersStatisticsApplication in 25.474 seconds (process running for 94317.276)
+Started PlayersStatisticsApplication in 1.685 seconds (process running for 1383.26)
 Condition evaluation unchanged
+Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+Commencing graceful shutdown. Waiting for active requests to complete
 Graceful shutdown complete
-Starting PlayersStatisticsApplication using Java 17.0.9 with PID 20224 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 26448 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
 The following 1 profile is active: "dev"
 Fetching config from server at : http://localhost:9090
 Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
@@ -46,46 +133,21 @@ Tomcat initialized with port 8080 (http)
 Starting service [Tomcat]
 Starting Servlet engine: [Apache Tomcat/10.1.34]
 Initializing Spring embedded WebApplicationContext
-Root WebApplicationContext: initialization completed in 2165 ms
+Root WebApplicationContext: initialization completed in 452 ms
 Filter 'webMvcObservationFilter' configured for use
 2 mappings in 'requestMappingHandlerMapping'
 Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
 ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
 ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-Unable to start LiveReload server
+LiveReload server is running on port 35729
 Exposing 1 endpoint beneath base path '/actuator'
 Tomcat started on port 8080 (http) with context path '/'
-Started PlayersStatisticsApplication in 5.634 seconds (process running for 94325.569)
+Started PlayersStatisticsApplication in 1.642 seconds (process running for 1419.747)
 Condition evaluation unchanged
-Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+Restarting due to 6 class path changes (6 additions, 0 deletions, 0 modifications)
 Commencing graceful shutdown. Waiting for active requests to complete
 Graceful shutdown complete
-Starting PlayersStatisticsApplication using Java 17.0.9 with PID 20224 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
-The following 1 profile is active: "dev"
-Fetching config from server at : http://localhost:9090
-Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
-Fetching config from server at : http://localhost:9090
-Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
-BeanFactory id=277ce0a0-27bb-376e-92d2-11892374a97a
-Tomcat initialized with port 8080 (http)
-Starting service [Tomcat]
-Starting Servlet engine: [Apache Tomcat/10.1.34]
-Initializing Spring embedded WebApplicationContext
-Root WebApplicationContext: initialization completed in 1404 ms
-Filter 'webMvcObservationFilter' configured for use
-2 mappings in 'requestMappingHandlerMapping'
-Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-Unable to start LiveReload server
-Exposing 1 endpoint beneath base path '/actuator'
-Tomcat started on port 8080 (http) with context path '/'
-Started PlayersStatisticsApplication in 5.312 seconds (process running for 94369.566)
-Condition evaluation unchanged
-Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
-Commencing graceful shutdown. Waiting for active requests to complete
-Graceful shutdown complete
-Starting PlayersStatisticsApplication using Java 17.0.9 with PID 20224 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 26448 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
 The following 1 profile is active: "dev"
 Fetching config from server at : http://localhost:9090
 Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
@@ -96,21 +158,36 @@ Tomcat initialized with port 8080 (http)
 Starting service [Tomcat]
 Starting Servlet engine: [Apache Tomcat/10.1.34]
 Initializing Spring embedded WebApplicationContext
-Root WebApplicationContext: initialization completed in 1965 ms
+Root WebApplicationContext: initialization completed in 393 ms
 Filter 'webMvcObservationFilter' configured for use
 3 mappings in 'requestMappingHandlerMapping'
 Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
 ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
 ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-Unable to start LiveReload server
+LiveReload server is running on port 35729
 Exposing 1 endpoint beneath base path '/actuator'
 Tomcat started on port 8080 (http) with context path '/'
-Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-Started PlayersStatisticsApplication in 7.879 seconds (process running for 94379.7)
-Commencing graceful shutdown. Waiting for active requests to complete
+Started PlayersStatisticsApplication in 1.428 seconds (process running for 1422.544)
 Condition evaluation unchanged
+Starting PlayersStatisticsApplicationTests using Java 17.0.9 with PID 29956 (started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Refreshing org.springframework.web.context.support.GenericWebApplicationContext@53ed09e8
+BeanFactory id=821e7436-23e6-360c-a6ed-8fc6c7c363e3
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+Exposing 1 endpoint beneath base path '/actuator'
+Started PlayersStatisticsApplicationTests in 4.225 seconds (process running for 5.9)
+Closing org.springframework.web.context.support.GenericWebApplicationContext@53ed09e8, started on Tue Jan 14 10:08:21 EET 2025
+Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+Commencing graceful shutdown. Waiting for active requests to complete
 Graceful shutdown complete
-Starting PlayersStatisticsApplication using Java 17.0.9 with PID 20224 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 26448 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
 The following 1 profile is active: "dev"
 Fetching config from server at : http://localhost:9090
 Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
@@ -121,7 +198,56 @@ Tomcat initialized with port 8080 (http)
 Starting service [Tomcat]
 Starting Servlet engine: [Apache Tomcat/10.1.34]
 Initializing Spring embedded WebApplicationContext
-Root WebApplicationContext: initialization completed in 1034 ms
+Root WebApplicationContext: initialization completed in 433 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+LiveReload server is running on port 35729
+Exposing 1 endpoint beneath base path '/actuator'
+Tomcat started on port 8080 (http) with context path '/'
+Started PlayersStatisticsApplication in 1.341 seconds (process running for 1507.528)
+Condition evaluation unchanged
+Restarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)
+Commencing graceful shutdown. Waiting for active requests to complete
+Graceful shutdown complete
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 26448 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+BeanFactory id=6b083677-bf75-3c1f-8a00-42cc878be63b
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 426 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+LiveReload server is running on port 35729
+Exposing 1 endpoint beneath base path '/actuator'
+Tomcat started on port 8080 (http) with context path '/'
+Started PlayersStatisticsApplication in 1.644 seconds (process running for 1515.318)
+Condition evaluation unchanged
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 29148 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+BeanFactory id=6b083677-bf75-3c1f-8a00-42cc878be63b
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2647 ms
 Filter 'webMvcObservationFilter' configured for use
 3 mappings in 'requestMappingHandlerMapping'
 Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
@@ -129,6 +255,285 @@ ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1
 ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
 Unable to start LiveReload server
 Exposing 1 endpoint beneath base path '/actuator'
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+Commencing graceful shutdown. Waiting for active requests to complete
+Graceful shutdown complete
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 26448 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+BeanFactory id=9df6ca70-8662-370e-932f-3492cc54ac7c
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 401 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+LiveReload server is running on port 35729
+Exposing 17 endpoints beneath base path '/actuator'
 Tomcat started on port 8080 (http) with context path '/'
-Started PlayersStatisticsApplication in 3.513 seconds (process running for 94385.981)
-Condition evaluation unchanged
+Started PlayersStatisticsApplication in 1.402 seconds (process running for 1750.058)
+Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   CachesEndpointAutoConfiguration#cachesEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) found bean 'configurationPropertiesReportEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   SbomEndpointAutoConfiguration#sbomEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.sbom.SbomEndpoint; SearchStrategy: all) found bean 'sbomEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.sbom.SbomEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 33920 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+BeanFactory id=9df6ca70-8662-370e-932f-3492cc54ac7c
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2566 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+Unable to start LiveReload server
+Exposing 17 endpoints beneath base path '/actuator'
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 28108 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+BeanFactory id=9df6ca70-8662-370e-932f-3492cc54ac7c
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 1738 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+Unable to start LiveReload server
+Exposing 17 endpoints beneath base path '/actuator'
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 37652 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+BeanFactory id=9df6ca70-8662-370e-932f-3492cc54ac7c
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2131 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+Unable to start LiveReload server
+Exposing 17 endpoints beneath base path '/actuator'
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+Commencing graceful shutdown. Waiting for active requests to complete
+Graceful shutdown complete
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 5900 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+BeanFactory id=9df6ca70-8662-370e-932f-3492cc54ac7c
+Tomcat initialized with port 8080 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2222 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+LiveReload server is running on port 35729
+Exposing 17 endpoints beneath base path '/actuator'
+Tomcat started on port 8080 (http) with context path '/'
+Started PlayersStatisticsApplication in 5.93 seconds (process running for 6.939)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Detected StandardServletMultipartResolver
+Detected AcceptHeaderLocaleResolver
+Detected FixedThemeResolver
+Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@159b71d6
+Detected org.springframework.web.servlet.support.SessionFlashMapManager@5efcfd59
+enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+Completed initialization in 2 ms
+Starting PlayersStatisticsApplication using Java 17.0.9 with PID 7620 (D:\intellij\spring-micro\New folder\players-statistics\target\classes started by Ahmed.Elsheikh in D:\intellij\spring-micro\New folder\players-statistics)
+The following 1 profile is active: "dev"
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[default], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Fetching config from server at : http://localhost:9090
+Located environment: name=players-statistics, profiles=[dev], label=null, version=963198b736d2fe3e11fcd086bad31f2383b49cfe, state=
+Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+BeanFactory id=9df6ca70-8662-370e-932f-3492cc54ac7c
+Tomcat initialized with port 8050 (http)
+Starting service [Tomcat]
+Starting Servlet engine: [Apache Tomcat/10.1.34]
+Initializing Spring embedded WebApplicationContext
+Root WebApplicationContext: initialization completed in 2669 ms
+Filter 'webMvcObservationFilter' configured for use
+3 mappings in 'requestMappingHandlerMapping'
+Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+Unable to start LiveReload server
+Exposing 17 endpoints beneath base path '/actuator'
+Tomcat started on port 8050 (http) with context path '/'
+Started PlayersStatisticsApplication in 6.078 seconds (process running for 7.191)
+Initializing Spring DispatcherServlet 'dispatcherServlet'
+Initializing Servlet 'dispatcherServlet'
+Detected StandardServletMultipartResolver
+Detected AcceptHeaderLocaleResolver
+Detected FixedThemeResolver
+Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@72499f8f
+Detected org.springframework.web.servlet.support.SessionFlashMapManager@734739ab
+enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+Completed initialization in 3 ms
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=5, numberOfPlayers=10, country=Country Cairo)]
+Completed 200 OK
+GET "/players-management/statistics", parameters={}
+Mapped to com.spring.players.controller.PlayersStatisticsController#getPlayersStatistics()
+Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+Writing [PlayersStatistics(numberOfTeams=5, numberOfPlayers=10, country=Country Cairo)]
+Completed 200 OK
