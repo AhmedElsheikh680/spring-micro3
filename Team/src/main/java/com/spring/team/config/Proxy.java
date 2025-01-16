@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 //@FeignClient(name = "football", url = "localhost:8888")
-//@FeignClient(name = "football")
-@FeignClient(name = "spring-zuul-gateway")// http://localhost:8765
+@FeignClient(name = "football")
+//@FeignClient(name = "spring-zuul-gateway")// http://localhost:8765
 @RibbonClient(name = "football")
 public interface Proxy {
 
